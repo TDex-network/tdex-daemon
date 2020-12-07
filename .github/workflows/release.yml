@@ -19,6 +19,7 @@ jobs:
 
       - name: OSXCross for CGO Support
         run: |
+          sudo apt install --reinstall libssl1.0.0
           mkdir ../../osxcross
           git clone https://github.com/plentico/osxcross-target.git ../../osxcross/target
 
